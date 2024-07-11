@@ -125,6 +125,7 @@ copy "$(SolutionDir)\libs\vmm.dll" "$(TargetDir)\vmm.dll"
     <PostBuildEvent>
       <Command>copy "$(SolutionDir)\libs\leechcore.dll" "$(TargetDir)\leechcore.dll"
 copy "$(SolutionDir)\libs\vmm.dll" "$(TargetDir)\vmm.dll"
+copy "$(SolutionDir)\libs\FTD3XX.dll" "$(TargetDir)\FTD3XX.dll"
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
