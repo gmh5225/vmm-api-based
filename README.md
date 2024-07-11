@@ -5,3 +5,4 @@ This repository contains a boilerplate project for the MemProcFS VMM API, based 
 ## Features
 
 - Integration with MemProcFS v5.9
+- Integration with D3XX driver v1.3.0.10 (64-bit)
