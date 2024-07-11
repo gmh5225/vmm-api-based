@@ -66,13 +66,10 @@ VOID PrintHexAscii(_In_ PBYTE pb, _In_ DWORD cb)
 int main() 
 {
     ShowKeyPress();
-
     VMM_HANDLE hVMM = NULL;
     BOOL result;
     BYTE pbPage1[0x1000];
     DWORD dwPID;
-
-
 
     printf("CALL:    VMMDLL_Initialize\n");
     LPCSTR args[] = { (LPSTR)"",(LPSTR)"-device", (LPSTR)"FPGA",(LPSTR)"-norefresh" };
@@ -244,7 +241,7 @@ int main()
     }
 
 
-    // Retrieve the list of loaded DLLs from the process. Please note that this
+     // Retrieve the list of loaded DLLs from the process. Please note that this
      // list is retrieved by parsing in-process memory structures such as the
      // process environment block (PEB) which may be partly destroyed in some
      // processes due to obfuscation and anti-reversing. If that is the case the
